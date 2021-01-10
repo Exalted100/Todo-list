@@ -4,24 +4,25 @@ input[type=checkbox]:checked + .strikethrough {
 }
 
 .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 70%;
     border-bottom: 1px solid #bbbbbb;
     padding: 10px 10px;
-    margin: 20px auto;
-}
-
-.delete-button {
-    float: right;
-    clear: both;
-    position: relative;
-    bottom: 20px;
+    margin: 1em auto;
 }
 
 .checkbox-button {
-    float: left;
-    clear: both;
+    width: 4em;
+    text-align: left;
 }
 
-.label {
+.delete-button {
+    width: 4em;
+}
+
+.p {
     align-self: center;
+    display: inline;
 }

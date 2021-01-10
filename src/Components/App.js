@@ -14,7 +14,7 @@ const App = () => {
     }
 
     return (
-        <div className={"todo-project"}>
+        <div className="todo-project">
             <TypeTodo onClick={onButtonClick} todo={todo} />
             <Todos todo={todo} setTodo={setTodo}/>
         </div>

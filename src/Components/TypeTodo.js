@@ -21,7 +21,7 @@ const TypeTodo = ({ onClick }) => {
             value={newTodo}
             />
             <br />
-            <button onClick={onTodoSubmit}>Add todo</button>
+            <button className="add-button" onClick={onTodoSubmit}>Add todo</button>
         </div>
     )
 }

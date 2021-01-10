@@ -11,9 +11,9 @@ const Todos = ({ todo, setTodo }) => {
     }
 
     const items = todo.map((i, x) => 
-        <div className={"todo"} key={i.id}>
+        <div className="todo" key={i.id}>
             <input type="checkbox" onClick={() => toggle(x)} className={todo[x].isCompleted? "strikethrough checkbox-button": "checkbox-button"} />
-            <label className="label" className="strikethrough">{i.todoItem}</label>
+            <p className="label" className="strikethrough">{i.todoItem}</p>
             <button className="delete-button" onClick={() => setTodo(todo.filter(t => t.todoItem !== todo[x].todoItem))}>Delete</button>
         </div>)
 
